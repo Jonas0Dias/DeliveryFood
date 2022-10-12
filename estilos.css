@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    
+}
+
+.topo{
+    height:92px;
+    width: 100%;
+    background-color:red;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.topo h1{
+    font-family:'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.topo p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.topo div{
+    margin-left: 21px;
+    margin-top: 8px;
+}
+
+.cardapio{
+    height: 84%;
+    margin-top: 92px;
+    padding-top: 31px;
+    padding-left: 19px;
+    background: #E5E5E5;
+    margin-bottom: 92px;
+    padding-bottom: 16px;
+    
+}
+.h1{
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #333333;
+    line-height: 32px;
+    margin-top: 27px;
+}
+
+.pratos{
+    display: flex;
+    margin-top:17px;
+    overflow-x: scroll;
+    margin-left: -19px;
+
+}
+.prato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 144px;
+    height: 216px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom:14px;
+    margin-left: 19px;
+}
+.prato img{
+    margin-top: 18px;
+    margin-bottom: 8px;
+    width: 144px;
+    height: 87px;
+}
+
+.prato h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    line-height: 19px;
+}
+
+.prato p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #A6A6A6;
+    line-height: 18px;
+    width: 90%;
+}
+
+.prato h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    line-height: 19px;
+}
+
+.base{
+    height: 92px;
+    width: 100%;
+    background: #FFFFFF;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+
+
+
+.cinza{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #CBCBCB;
+    border-radius: 50px;
+    width: 364px;
+    height: 61px;
+}
+
+.cinza h1{
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    width: 60%;
+    text-align: center;
+}
