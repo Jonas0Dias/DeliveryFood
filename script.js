@@ -1,8 +1,11 @@
-var a = window.document.querySelector('div.prato')
-    a.addEventListener('touchstart', clicar)
-
-
+const a = window.document.querySelectorAll('div.prato')
 function clicar(){
-    a.classList.replace('prato' , 'pratoclicado');
+    if (a.classList.contains('pratoclicado')){
+
+    }
+    else{
+        a.classList.toggle('pratoclicado')
+    }
+    
 }
     
