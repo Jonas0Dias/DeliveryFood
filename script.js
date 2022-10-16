@@ -1,11 +1,14 @@
-const a = window.document.querySelectorAll('div.prato')
+const a = window.document.querySelectorAll('.prato')
+a.addEventListener("click",clicar())
 function clicar(){
-    if (a.classList.contains('pratoclicado')){
-
+    if (a[0].classList.contains("pratoclicado")){
+        a.classList.remove("pratoclicado")
     }
     else{
-        a.classList.toggle('pratoclicado')
+        a[0].classList.add('pratoclicado')
     }
     
 }
+    
+
     
