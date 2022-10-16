@@ -164,8 +164,9 @@ body{
     padding-right: 14px;
     padding-bottom:14px;
     margin-left: 19px;
+    box-shadow: 0 0 5px 5px rgb(14, 184, 31);
     border-color: chartreuse;
-    border-width: 3px;
+    border-width: 0px;
     border-style: solid;
     
 }

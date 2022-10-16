@@ -1,14 +1,25 @@
-const a = window.document.querySelectorAll('.prato')
-a.addEventListener("click",clicar())
-function clicar(){
-    if (a[0].classList.contains("pratoclicado")){
-        a.classList.remove("pratoclicado")
+const a = window.document.querySelectorAll('.principal')
+//a.addEventListener("click",clicar())
+function clicar(t){
+    if (t.classList.contains('pratoclicado')){
+        t.classList.remove('pratoclicado')
     }
     else{
-        a[0].classList.add('pratoclicado')
+        t.classList.add('pratoclicado')
+    }
+    for (const i=0; i < 3; i=i+1){
+        var selecionado = a[i].classList.contains('pratoclicado') 
+        if ( selecionado !== null && a[i]!==t){
+            a[i].classList.remove('pratoclicado')
+
+        }
+
+        
+
     }
     
 }
-    
+
+
 
     
