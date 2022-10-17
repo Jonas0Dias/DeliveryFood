@@ -6,6 +6,7 @@
 const a = window.document.querySelectorAll('.principal')
 const b = window.document.querySelectorAll('.bebida')
 const c = window.document.querySelectorAll('.sobremesa')
+const d = window.document.querySelector('.cinza')
 //a.addEventListener("click",clicar())
 function clicarp(t){
     if (t.classList.contains('pratoclicado')){
@@ -53,31 +54,43 @@ function clicars(u){
     }
     
 }
-
-for (let i=0; i<a.length; i++){
-    if( a[i].classList.contains('pratoclicado')!== null){
-        const qq=1
+function verificarprato(){
+    let prato=0;
+    for (let i=0; i<a.length; i++){
+        if( a[i].classList.contains('pratoclicado')){
+            prato=1   
+            break
+        }
     }
+    return prato
 }
 
-for (let i=0; i<b,length; i++){
-    if( b[i].classList.contains('pratoclicado')){
-        var bebida=1
+function verificarbebida(){
+    let bebida=0;
+    for (let i=0; i<a.length; i++){
+        if( b[i].classList.contains('pratoclicado')){
+            bebida=1   
+            break
+        }
     }
-    else{
-        
-    }
+    return bebida
 }
 
-for (let i=0; i<c.length; i++){
-    if( c[i].classList.contains('pratoclicado')){
-        var sobremesa=1
+function verificarsobremesa(){
+    let sobremesa=0;
+    for (let i=0; i<a.length; i++){
+        if( c[i].classList.contains('pratoclicado')){
+            sobremesa=1   
+            break
+        }
     }
-    else{
-        
-    }
+    return sobremesa
 }
 
 
 
-    
+function finalizar(){
+    if (verificarprato()+verificarbebida()+verificarsobremesa()==3){
+        d.classList.add('verde')
+    }
+}
