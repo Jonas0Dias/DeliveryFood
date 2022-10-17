@@ -107,6 +107,7 @@ function verificarsobremesa(){
 
 function finalizar(){
     if (verificarprato()+ verificarbebida() + verificarsobremesa()==3){
+        d.pointerEvents = 'all'
         d.classList.add('verde')
         e.innerHTML = "Fechar pedido"
     }
@@ -117,4 +118,3 @@ function finalizar(){
     }
 }
 
-finalizar();
