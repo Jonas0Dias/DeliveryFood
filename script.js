@@ -7,6 +7,7 @@ const a = window.document.querySelectorAll('.principal')
 const b = window.document.querySelectorAll('.bebida')
 const c = window.document.querySelectorAll('.sobremesa')
 const d = window.document.querySelector('.cinza')
+const e = window.document.querySelector('.cinza h1')
 //a.addEventListener("click",clicar())
 function clicarp(t){
     if (t.classList.contains('pratoclicado')){
@@ -22,6 +23,7 @@ function clicarp(t){
 
         }
     }
+    finalizar();
 }
 function clicarb(y){
     if (y.classList.contains('pratoclicado')){
@@ -37,6 +39,7 @@ function clicarb(y){
 
         }
     }
+    finalizar();
 }
 function clicars(u){
     if (u.classList.contains('pratoclicado')){
@@ -52,7 +55,7 @@ function clicars(u){
 
         }
     }
-    
+    finalizar();
 }
 function verificarprato(){
     let prato=0;
@@ -67,7 +70,7 @@ function verificarprato(){
 
 function verificarbebida(){
     let bebida=0;
-    for (let i=0; i<a.length; i++){
+    for (let i=0; i<b.length; i++){
         if( b[i].classList.contains('pratoclicado')){
             bebida=1   
             break
@@ -78,7 +81,7 @@ function verificarbebida(){
 
 function verificarsobremesa(){
     let sobremesa=0;
-    for (let i=0; i<a.length; i++){
+    for (let i=0; i<c.length; i++){
         if( c[i].classList.contains('pratoclicado')){
             sobremesa=1   
             break
@@ -87,10 +90,16 @@ function verificarsobremesa(){
     return sobremesa
 }
 
-
-
 function finalizar(){
-    if (verificarprato()+verificarbebida()+verificarsobremesa()==3){
+    if (verificarprato()+ verificarbebida() + verificarsobremesa()==3){
         d.classList.add('verde')
+        e.innerHTML = "Fechar pedido"
+    }
+    else{
+        d.classList.remove('verde')
+        e.innerHTML = 'Selecione os 3 itens do seu pedido'
+
     }
 }
+
+finalizar();
