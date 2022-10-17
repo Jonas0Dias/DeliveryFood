@@ -8,24 +8,39 @@ const b = window.document.querySelectorAll('.bebida')
 const c = window.document.querySelectorAll('.sobremesa')
 const d = window.document.querySelector('.cinza')
 const e = window.document.querySelector('.cinza h1')
+const f = window.document.querySelectorAll('ion-icon')
 //a.addEventListener("click",clicar())
 function clicarp(t){
+
+
     if (t.classList.contains('pratoclicado')){
         t.classList.remove('pratoclicado')
     }
+    
+    
     else{
         t.classList.add('pratoclicado')
     }
+
+    
+
+
+
+
+
     for (let i=0; i < a.length; i=i+1){
         var selecionado = a[i].classList.contains('pratoclicado') 
         if ( selecionado !== null && a[i]!==t){
             a[i].classList.remove('pratoclicado')
 
         }
+
+
     }
     finalizar();
 }
 function clicarb(y){
+    
     if (y.classList.contains('pratoclicado')){
             y.classList.remove('pratoclicado')
         }
