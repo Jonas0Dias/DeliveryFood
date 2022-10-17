@@ -98,6 +98,10 @@ ion-icon{
 
 }
 
+a{
+    text-decoration: none;
+}
+
 .ion{
 
     display: block;

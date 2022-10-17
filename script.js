@@ -10,8 +10,25 @@ const d = window.document.querySelector('.cinza')
 const e = window.document.querySelector('.cinza h1')
 const f = window.document.querySelectorAll('ion-icon')
 //a.addEventListener("click",clicar())
-function clicarp(t){
 
+function check(id){
+    if (f[id].classList.contains('ion')){
+        f[id].classList.remove('ion')
+    }
+
+    else{
+        f[id].classList.add('ion')
+    }
+    
+
+    
+}
+
+
+
+
+
+function clicarp(t){
 
     if (t.classList.contains('pratoclicado')){
         t.classList.remove('pratoclicado')
@@ -40,7 +57,7 @@ function clicarp(t){
     finalizar();
 }
 function clicarb(y){
-    
+
     if (y.classList.contains('pratoclicado')){
             y.classList.remove('pratoclicado')
         }
@@ -118,3 +135,7 @@ function finalizar(){
     }
 }
 
+
+// function fecharpedido{
+//     window.open(https://wa.me/55959084889?text=${encodeURIComponent(TESTANDO)});
+// }
